@@ -59,3 +59,9 @@ describe('Login Sauce Demo', () => {
     })
 })
 
+describe('Add Product to Cart', () => {
+    it('should get error massage with blank password', async () => {
+        await HomePage.addAProductToCart()
+        await HomePage.validateBadgeCart()
+    })
+})
